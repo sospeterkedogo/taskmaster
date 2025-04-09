@@ -16,7 +16,8 @@ class Todo(db.Model):
         return 'Task %r' % self.id
 
 with app.app_context():
-    db.create_all()
+    #db.create_all()
+    pass
     
 
 @app.route('/', methods=['POST', 'GET'])
