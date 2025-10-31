@@ -16,8 +16,7 @@ class Todo(db.Model):
         return 'Task %r' % self.id
 
 with app.app_context():
-    #db.create_all()
-    pass
+    db.create_all()
     
     
 
